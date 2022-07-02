@@ -1,32 +1,41 @@
-body{
-    font-family: 'Kantumruy Pro', sans-serif;;
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+    ;
     color: black;
 }
 
-h1{
+h1 {
     font-size: 3rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
     font-family: 'Cinzel', serif;
 }
 
-h2{
+h2 {
     font-size: 1.25rem;
     font-weight: 300;
     margin: 0.25rem 0 0.25rem 0;
 }
 
-.portrait{
+a:hover {
+    filter: brightness(93%);
+}
+
+a:hover>img {
+    border-radius: 10px;
+}
+
+.portrait {
     border-radius: 50%;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 
-.header{
+.header {
     margin-top: 5rem;
 }
 
-.container{
+.container {
     border-style: solid;
     border-width: 4px 4px;
     border-color: black;
@@ -40,21 +49,21 @@ h2{
     padding: 1rem 0 1rem 0;
 }
 
-.center{
+.center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.center2{
+.center2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 3rem;
-    
+
 }
 
-.space{
+.space {
     margin-right: 3rem;
     margin-left: 3rem;
 }
