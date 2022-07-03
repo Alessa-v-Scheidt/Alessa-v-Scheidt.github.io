@@ -21,89 +21,162 @@
         <div class="portfolio-text-container">
             <h1>VINCENT & VOLTAIRE</h1>
             <h2>Screendesign</h2>
-            <p class="space-top">In diesem Projekt wurde sowohl die Logik, als auch das Design für einen Pokedex
-                erstellt.</p>
+            <p class="space-top">In diesem Projekt wurden die "Stöber- und Entdeckerformate" von VINCENT & VOLTAIRE
+                durch Bücherregale und -tische optimiert und erweitert.</p>
         </div>
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="slideshow-pages">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="images/startseite.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img class="img-rahmen" src="images/startseite.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="images/regal.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <img class="img-rahmen" src="images/regal.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="images/popup.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <img class="img-rahmen" src="images/popup.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="images/büchertische.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <img class="img-rahmen" src="images/büchertische.jpg" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusPagesSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusPagesSlides(1)">&#10095;</a>
         </div>
         <br>
 
         <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+        <div style="text-align:center" id="slideshow-pages-dots">
+            <span class="dot" onclick="currentPagesSlide(1)"></span>
+            <span class="dot" onclick="currentPagesSlide(2)"></span>
+            <span class="dot" onclick="currentPagesSlide(3)"></span>
+            <span class="dot" onclick="currentPagesSlide(4)"></span>
         </div>
         <div class="portfolio-text-container">
-            <p class="space-p"><b>Ziel</b> für dieses Projekt war die Entwicklung eines Pokedex. Dabei ging es sowohl um
-                die Verarbeitung von Daten, als auch um die Gestaltung der Seite.</p>
-            <p class="space-p">Die <b>Lösung</b> hierfür war die Daten der PokeAPI über das Framework Angular abzufragen
-                und zu verarbeiten, während das Design mithilfe von HTML und CSS, sowie dem Framework TailwindCSS
-                umgesetzt wurde.</p>
-            <p>Meine <b>Rolle</b> war sowohl die </p>
+            <p class="space-p"><b>Ziel</b> für dieses Projekt war die Neugestaltung und Optimierung der "Stöber- und
+                Entdeckerformaten" der Online Buchhandlung VINCENT & VOLTAIRE. Den Kunden soll dadurch sowohl ein guter
+                Überblick über das Sortiment verschafft werden, als auch ihr Interesse angeregt werden.</p>
+            <p>Der Grundaufbau des <b>Gestaltungskonzepts</b> setzt sich aus Büchertischen und
+                Bücherregalen, wie sie in lokalen Buchhandlungen vorzufinden sind, zusammen. Durch die digitalen
+                Bücherregale wird dem Kunden das Stöbern im einfacheren und größerem Umfang ermöglicht. Dies wird durch
+                das Darstellen der Bücher als Buchrücken erreicht. Zusätzlich wird beim Kunden ein stärkeres Gefühl des
+                "Buch entdecken" vermittelt, da er es selbst aus dem Regal herausnehmen und genauer ansehen kann. Das
+                Buchcover erscheint dann in Form eines Popup.</p>
+            <p class="space-p">Die Büchertische ermöglichen einen Überblick auf mehrere Buchthemen gleichzeitig. Für jedes Buchthema
+                sind die jeweils vier beliebtesten bzw. meistgekauften Bücher ausgelegt, die sich wieder durch ein Popup
+                genauer betrachten lassen.</p>
+            <p>Das <b>Design</b> orientierte sich an dem von VINCENT & VOLTAIRE und setzt vor allem auf die Verwendung
+                von viel Whitespace, um das Wichtige hervorzuheben und übersichtlich darzustellen.</p>
+        </div>
+
+        <div class="slideshow-container" id="slideshow-styleguide">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img class="img-rahmen" src="images/styleguide1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img class="img-rahmen" src="images/styleguide2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img class="img-rahmen" src="images/styleguide3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img class="img-rahmen" src="images/styleguide4.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusStyleguideSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusStyleguideSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" id="slideshow-styleguide-dots">
+            <span class="dot" onclick="currentStyleguideSlide(1)"></span>
+            <span class="dot" onclick="currentStyleguideSlide(2)"></span>
+            <span class="dot" onclick="currentStyleguideSlide(3)"></span>
+            <span class="dot" onclick="currentStyleguideSlide(4)"></span>
+        </div>
+
+        <div class="portfolio-text-container">
             <button class="space-button" onclick="window.location.href = './'">Zurück zu den Projekten</button>
         </div>
     </div>
 
+    
+
     <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+        let pagesSlideIndex = 1;
+        let styleguideSlideIndex = 1;
+
+        showPagesSlides(pagesSlideIndex);
+        showStyleguideSlides(styleguideSlideIndex);
 
         // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
+        function plusPagesSlides(n) {
+            showPagesSlides(pagesSlideIndex += n);
         }
 
         // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
+        function currentPagesSlide(n) {
+            showPagesSlides(pagesSlideIndex = n);
         }
 
-        function showSlides(n) {
+        function plusStyleguideSlides(n) {
+            showStyleguideSlides(styleguideSlideIndex += n);
+        }
+
+        function currentStyleguideSlide(n) {
+            showStyleguideSlides(styleguideSlideIndex = n);
+        }
+
+        function showPagesSlides(n) {
             let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            let slides = document.querySelectorAll("#slideshow-pages>div");
+            let dots = document.querySelectorAll("#slideshow-pages-dots>span");
+            if (n > slides.length) { pagesSlideIndex = 1 }
+            if (n < 1) { pagesSlideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            slides[pagesSlideIndex - 1].style.display = "block";
+            dots[pagesSlideIndex - 1].className += " active";
+        }
+
+        function showStyleguideSlides(n) {
+            let i;
+            let slides = document.querySelectorAll("#slideshow-styleguide>div");
+            let dots = document.querySelectorAll("#slideshow-styleguide-dots>span");
+            if (n > slides.length) { styleguideSlideIndex = 1 }
+            if (n < 1) { styleguideSlideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[styleguideSlideIndex - 1].style.display = "block";
+            dots[styleguideSlideIndex - 1].className += " active";
         }
     </script>
 </body>
