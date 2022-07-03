@@ -7,8 +7,8 @@ body {
 h1 {
     font-size: 3rem;
     font-weight: 700;
-    margin: 0 0 1rem 0;
     font-family: 'Cinzel', serif;
+    margin: 0 0 0 0;
 }
 
 h2 {
@@ -23,6 +23,30 @@ a:hover {
 
 a:hover>img {
     border-radius: 10px;
+}
+
+p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+button{
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+
+button:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.start {
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 .portrait {
@@ -49,6 +73,15 @@ a:hover>img {
     padding: 1rem 0 1rem 0;
 }
 
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+}
+
 .center {
     display: flex;
     flex-direction: column;
@@ -59,11 +92,48 @@ a:hover>img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
 
 }
 
 .space {
     margin-right: 3rem;
     margin-left: 3rem;
+}
+
+.space-bottom {
+    margin: 0 0 3rem 0;
+}
+
+.space-p{
+    margin: 0 0 1rem 0;
+}
+
+.space-button{
+    margin: 4rem 0 0 0;
+}
+
+.space-top {
+    margin: 3rem 0 0 0;
+}
+
+.img-rahmen {
+    border-style: solid;
+    border-width: 2px 2px;
+    border-color: black;
+    display: block;
+    width: 100%;
+}
+
+.portfolio-container {
+    margin: 5rem auto 10rem auto;
+    width: min(80%, 1200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.portfolio-text-container {
+    width: 100%;
 }
