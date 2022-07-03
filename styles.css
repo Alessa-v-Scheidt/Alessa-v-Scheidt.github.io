@@ -117,6 +117,10 @@ button:hover{
     margin: 3rem 0 0 0;
 }
 
+.just-space{
+    margin: 2rem 0 3rem 0;
+}
+
 .img-rahmen {
     border-style: solid;
     border-width: 2px 2px;
