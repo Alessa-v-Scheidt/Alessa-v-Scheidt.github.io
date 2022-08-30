@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <div class="portfolio-text-container">
+            <h1>Todo App</h1>
+            <h2>Werkstudentenprojekt</h2>
+            <p class="space-top">In diesem Projekt wurde sowohl die Logik, als auch das Design für eine Todo App
+                erstellt.</p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="mobile-rahmen" src="images/todo-mobile-1.png" alt="ein fehler ist aufgetreten" />
+            </div>
+            <div class="column">
+                <img class="mobile-rahmen" src="images/todo-mobile-2.png" alt="ein fehler ist aufgetreten" />
+            </div>
+            <div class="column">
+                <img class="mobile-rahmen" src="images/todo-mobile-3.png" alt="ein fehler ist aufgetreten" />
+            </div>
+        </div>
+
+        <div class="portfolio-text-container just-space">
+            <p class="space-p"><b>Ziel</b> für dieses Projekt war die Erstellung einer Todo App. </p>
+
+            <p class="space-p">Bei der Umsetzung der App waren bestimmte Rahmenbedingungen einzuhalten. So sollte die
+                Logik ohne Verwendung von Libraries in TypeScript
+                umgesetzt werden unter Verwendung eines Linter.
+                Bei der Erstellung des <b>Gestaltungskonzepts</b> war die Entwicklung eines responsiven Mobile First
+                Designs gefordert.</p>
+
+            <p>Beim <b>Design</b> wurde auf leichte Bedienbarkeit und Übersichtlichkeit für den Nutzer geachtet. Dies
+                wurde durch
+                ein schlichtes Design und die Verwendung gängiger Icons erreicht. Bei den Farben für die App wurde sich
+                an den Firmenfarben von Cologne Intelligence
+                orientiert.</p>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container" id="slideshow-pages">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="img-rahmen" src="images/todo-tablet-1.png" style="width:100%; height:50rem">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="img-rahmen" src="images/todo-tablet-2.png" style="width:100%; height:50rem">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="img-rahmen" src="images/todo-tablet-3.png" style="width:100%; height:50rem">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusPagesSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusPagesSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" id="slideshow-pages-dots">
+            <span class="dot" onclick="currentPagesSlide(1)"></span>
+            <span class="dot" onclick="currentPagesSlide(2)"></span>
+            <span class="dot" onclick="currentPagesSlide(3)"></span>
+        </div>
+
+        <div class="slideshow-container" id="slideshow-styleguide">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="img-rahmen" src="images/todo-desktop-1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="img-rahmen" src="images/todo-desktop-2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="img-rahmen" src="images/todo-desktop-3.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusStyleguideSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusStyleguideSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" id="slideshow-styleguide-dots">
+            <span class="dot" onclick="currentStyleguideSlide(1)"></span>
+            <span class="dot" onclick="currentStyleguideSlide(2)"></span>
+            <span class="dot" onclick="currentStyleguideSlide(3)"></span>
+        </div>
+
+        <div class="portfolio-text-container">
+            <button class="space-button" onclick="window.location.href = './'">Zurück zu den Projekten</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        let pagesSlideIndex = 1;
+        let styleguideSlideIndex = 1;
+
+        showPagesSlides(pagesSlideIndex);
+        showStyleguideSlides(styleguideSlideIndex);
+
+        // Next/previous controls
+        function plusPagesSlides(n) {
+            showPagesSlides(pagesSlideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentPagesSlide(n) {
+            showPagesSlides(pagesSlideIndex = n);
+        }
+
+        function plusStyleguideSlides(n) {
+            showStyleguideSlides(styleguideSlideIndex += n);
+        }
+
+        function currentStyleguideSlide(n) {
+            showStyleguideSlides(styleguideSlideIndex = n);
+        }
+
+        function showPagesSlides(n) {
+            let i;
+            let slides = document.querySelectorAll("#slideshow-pages>div");
+            let dots = document.querySelectorAll("#slideshow-pages-dots>span");
+            if (n > slides.length) { pagesSlideIndex = 1 }
+            if (n < 1) { pagesSlideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[pagesSlideIndex - 1].style.display = "block";
+            dots[pagesSlideIndex - 1].className += " active";
+        }
+
+        function showStyleguideSlides(n) {
+            let i;
+            let slides = document.querySelectorAll("#slideshow-styleguide>div");
+            let dots = document.querySelectorAll("#slideshow-styleguide-dots>span");
+            if (n > slides.length) { styleguideSlideIndex = 1 }
+            if (n < 1) { styleguideSlideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[styleguideSlideIndex - 1].style.display = "block";
+            dots[styleguideSlideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
